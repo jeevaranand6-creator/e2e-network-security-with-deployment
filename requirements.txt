@@ -6,5 +6,12 @@ certifi
 pymongo[srv]==4.16.0
 scikit-learn
 dill
+mlflow
 pyaml
+dagshub
+fastapi
+uvicorn
+starlette 
+jinja2
+python-multipart
 # -e .

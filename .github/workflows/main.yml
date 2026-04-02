@@ -1,0 +1,22 @@
+name: CI/CD
+on:
+  push:
+    branches: 
+    - main
+  paths-ignore:
+    - 'README.md'
+
+jobs:
+  integration:
+    name: Continous Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Lint code
+        uses: echo "Linting Repository"
+
+      - name: Run unit tests
+        uses: echo "Running Unit Tests"
+      
